@@ -10,5 +10,5 @@ Contraints: On any pair of variables A,B, there must not be a cell of cage A tha
 A puzzle is given as a tupple of strings.
 The first string of the tupple, indicates the cage of the cells. The second and the third string show the goal number and the operation of each cage respectively. 
 
-The csp class, which is imported, is implemented here: https://github.com/aimacode/aima-python/blob/master/csp.py  
+The csp class, which is imported, is from the aimacode project and can be found here: https://github.com/aimacode/aima-python/blob/master/csp.py  
 so it is required in order to run kenken.py.
