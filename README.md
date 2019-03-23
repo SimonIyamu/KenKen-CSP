@@ -11,4 +11,4 @@ A puzzle is given as a tupple of strings.
 The first string of the tupple, indicates the cage of the cells. The second and the third string show the goal number and the operation of each cage respectively. 
 
 The csp class, which is imported, is from the aimacode project and can be found here: https://github.com/aimacode/aima-python/blob/master/csp.py  
-so it is required in order to run kenken.py.
+It is required in order to run kenken.py.
