@@ -4,8 +4,6 @@ import time
 from math import sqrt
 from collections import defaultdict
 
-#Start counting from 0 and go from left to right and up to down
-
 # 3x3
 puzzle1 = ( "0 1 1 " +
             "0 2 3 "+
@@ -101,7 +99,7 @@ def operationSatisfyingValues(A,l):
 
 class KenKen(csp.CSP):
     """
-    The KenKen Problem
+    The KenKen Problem.
     Example execution:
     >>> s=KenKen(puzzle2)
     >>> a = csp.backtracking_search(s, select_unassigned_variable=csp.mrv, inference=csp.forward_checking)
@@ -115,6 +113,11 @@ class KenKen(csp.CSP):
     """
 
     def __init__(self,grid):
+        """
+            A tuple of three strings is passed as argument.
+            The first string of the tupple, indicates the cage of each cell.
+            The second and the third string show the goal number and the operation of each cage respectively.
+        """
         cageSequence = grid[0].split()
         self.numOfCages = numOfCages = len(grid[1].split())
         n = int(sqrt(len(cageSequence)))
